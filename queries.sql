@@ -1,4 +1,5 @@
--- Find all rows that have an ingredient name of Brussels sprouts.
+-- Find all rows that have an ingredient name of Brussels sprouts
+EXPLAIN ANALYZE
 SELECT * FROM ingredients
   WHERE name = 'Brussels sprouts';
 
@@ -17,5 +18,3 @@ SELECT * FROM ingredients
 -- Create indices to speed up quering
   CREATE INDEX ON ingredients(name);
   CREATE INDEX ON ingredients(unit);
-
--- EXPLAIN ANALYZE
